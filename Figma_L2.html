@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular Things to Do</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .whole-container {
+            max-width: 1920px;
+            margin:auto;
+
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card.large {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        .card-beach img {
+            height: 240px;
+            width: 300px;
+        }
+
+        .card-city img {
+            height: 240px;
+            width: 520px;
+        }
+
+        .card-mesuem img {
+            height: 240px;
+            width: 300px;
+        }
+
+        .card-food img {
+            height: 240px;
+            width: 190px;
+        }
+
+        .card-hiking img {
+            height: 240px;
+            width: 300px;
+        }
+
+
+        /* .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-size: 1.2em;
+        }
+
+        .why-choose {
+            background: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .feature {
+            flex: 1 1 200px;
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .feature img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .feature h3 {
+            margin: 10px 0;
+        }
+
+        .feature p {
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="whole-container">
+        <div class="main">
+            <img src="Frame.svg">
+
+        </div>
+        <div class="container">
+            <h1>Popular things to do</h1>
+            <div class="grid">
+                <div class="card large">
+                    <img src="cruises.svg" alt="Cruises">
+
+                </div>
+                <div class="card-beach">
+                    <img src="Beach.svg" alt="Beach Tours">
+
+                </div>
+                <div class="card-city">
+                    <img src="city.svg" alt="City Tours">
+
+                </div>
+                <div class="card-mesuem">
+                    <img src="museum.svg" alt="Museum Tour">
+
+                </div>
+                <div class="card-food">
+                    <img src="food.svg" alt="Food">
+
+                </div>
+                <div class="card-hiking">
+                    <img src="hiking.svg" alt="Hiking">
+
+                </div>
+            </div>
+        </div>
+        <div class="why-choose">
+            <h2>Why choose Tourz</h2>
+            <div class="features">
+                <div class="feature">
+                    <img src="ticket.svg.svg" alt="Ultimate flexibility">
+                    <h3>Ultimate flexibility</h3>
+                    <p>You're in control, with free cancellation and payment options to satisfy any plan or budget.</p>
+                </div>
+                <div class="feature">
+                    <img src="hot-air-balloon.svg.svg" alt="Memorable experiences">
+                    <h3>Memorable experiences</h3>
+                    <p>Browse and book tours and activities so incredible, you'll want to tell your friends.</p>
+                </div>
+                <div class="feature">
+                    <img src="diamond.svg.svg" alt="Quality at our core">
+                    <h3>Quality at our core</h3>
+                    <p>High-quality standards. Millions of reviews. A tourz company.</p>
+                </div>
+                <div class="feature">
+                    <img src="medal.svg.svg" Award-winning support">
+                    <h3>Award-winning support</h3>
+                    <p>New price? New plan? No problem. We're here to help, 24/7.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
