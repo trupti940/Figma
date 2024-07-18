@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCI Researcher</title>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+.container{
+    max-width: 1280px;
+    margin:auto;
+}
+
+header {
+    background: #f8f8f8;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-left: 100px;
+    /* justify-content: space-around; */
+}
+
+.hero img {
+    width: 400px;
+    height: 350px;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-left: 40px;
+}
+.hero-text{
+    width:600px;
+    margin-left: 60px;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    margin-bottom: 20px;
+}
+
+.hero-text form {
+    display: flex;
+}
+
+.hero-text input[type="email"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.hero-text button {
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.featured-work, .about-me, .my-process, .contact {
+    padding: 20px;
+    margin-left: 100px;
+}
+
+.featured-work h2, .about-me h2, .my-process h2, .contact h2 {
+    margin-bottom: 20px;
+}
+
+.work-grid, .process-grid {
+    display: flex;
+    gap: 20px;
+}
+
+/* .work-item, .process-item {
+    flex: 1;
+    padding: 10px;
+    background: #f8f8f8;
+    border-radius: 5px;
+    text-align: center;
+} */
+
+.about-me p {
+    line-height: 1.6;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact input, .contact textarea {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width:500px;
+    background-color: #ddd;
+    color:#007bff;
+    
+}
+.contact textarea{
+    height:144px;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+    <div class="container">
+    <header>
+        <nav>
+            <div class="logo">HCI Researcher</div>
+            <ul>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Process</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="girl.svg" alt="Profile Picture">
+            <div class="hero-text">
+                <h1>I'm a user experience researcher and <br> designer</h1>
+                <p>I work at the intersection of technology, design, and human <br>behavior to create intuitive, human-centered experiences.</p>
+                <form>
+                    <input type="email" placeholder="Email address">
+                    <button type="submit">Get in touch</button>
+                </form>
+            </div>
+        </section>
+        <section class="featured-work">
+            <h2>Featured Work</h2>
+            <div class="work-grid">
+                <img src="work-1.svg" alt="Work 1">
+                <img src="work-2.svg" alt="Work 2">
+                <img src="work-3.svg" alt="Work 3">
+            </div>
+        </section>
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>I'm a user experience researcher and designer. I'm currently a PhD student in Human-Computer Interaction at Stanford <br>University, where I work with James Landay and other amazing people in the HCI Group. My research focuses on<br> understanding how people interact with AI systems, with the goal of designing more transparent, trustworthy, and <br>equitable AI technologies. Before coming to Stanford, I worked as a UX designer and researcher at various tech <br>companies and labs, including Google, Airbnb, and the MIT Media Lab. I'm passionate about diversity and <br>inclusion in tech, and have led several initiatives to promote equity and representation for underrepresented groups in<br> the industry.</p>
+        </section>
+        <section class="my-process">
+            <h2>My Process</h2>
+            <div class="process-grid">
+                <img src="process-1.svg" alt="Work 1">
+                <img src="process-2.svg" alt="Work 2">
+                <img src="process-3.svg" alt="Work 3">
+                <img src="process-4.svg" alt="Work 1">
+                <img src="process-5.svg" alt="Work 2">
+                
+            </div>
+        </section>
+        <section class="contact">
+            <h2>Get in Touch</h2>
+            <form>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email address">
+                <textarea placeholder="Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    
+    </main>
+</div>
+</body>
+</html>
